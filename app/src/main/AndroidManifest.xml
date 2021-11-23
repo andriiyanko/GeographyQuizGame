@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medve.flagsquizapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logomain"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SelectGameMode"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".Statistics"></activity>
+        <activity android:name=".PlayingFlags"></activity>
+        <activity android:name=".DoneFlags"></activity>
+        <activity android:name=".ScoreFlags"></activity>
+        <activity android:name=".PlayingFamousPlaces" />
+        <activity android:name=".DoneFamousPlaces" />
+        <activity android:name=".ScoreFamousPlaces" />
+        <activity android:name=".PlayingCities" />
+        <activity android:name=".DoneCities" />
+        <activity android:name=".ScoreCities" />
+        <activity android:name=".PlayingWaterFalls" />
+        <activity android:name=".DoneWaterFalls" />
+        <activity android:name=".ScoreWaterFalls"></activity>
+    </application>
+
+</manifest>

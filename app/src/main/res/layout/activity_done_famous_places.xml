@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_done_famous_places"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectgamemode"
+    tools:context="com.example.medve.flagsquizapp.DoneFamousPlaces">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="122dp">
+
+            <TextView
+                android:id="@+id/txtFamousPLacesTotalScore"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/colorScoreTxt"
+                android:text="Score : 0"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtFamousPLacesTotalQuestion"
+                android:layout_gravity="center"
+                android:textColor="@color/colorScoreTxt"
+                android:fontFamily="sans-serif-black"
+                android:text="Passed : 0/30"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/doneProgressBarFamousPlaces"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Try again"
+                android:layout_width="@dimen/button_main_margin_top"
+                android:layout_height="@dimen/general_height_stat_mode_setting"
+                android:id="@+id/btnTryAgainFamousPlaces"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/buttonshape"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

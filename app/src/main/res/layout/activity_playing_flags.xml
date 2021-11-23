@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_playing_flags"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectgamemode"
+    tools:context="com.example.medve.flagsquizapp.PlayingFlags">
+
+    <ImageView
+        android:id="@+id/question_flag"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/united_states_of_america"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/question_flag"
+        android:id="@+id/relativeLayoutFlags"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutScore"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtScoreFlags"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="36sp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtQuestionFlags"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:text="1/10"
+                android:textSize="36sp"
+                android:layout_marginRight="8dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:max="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar" />
+
+            <Button
+                android:text="Answer A"
+                android:layout_width="246dp"
+                android:layout_height="@dimen/general_height_stat_mode_setting"
+                android:id="@+id/btnAnswerA"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/buttonshape"
+                android:layout_weight="0.08" />
+
+            <Button
+                android:text="Answer B"
+                android:layout_width="@dimen/button_main_margin_top"
+                android:layout_height="@dimen/general_height_stat_mode_setting"
+                android:id="@+id/btnAnswerB"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="9dp"/>
+
+            <Button
+                android:text="Answer C"
+                android:layout_width="@dimen/button_main_margin_top"
+                android:layout_height="@dimen/general_height_stat_mode_setting"
+                android:id="@+id/btnAnswerC"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="9dp"/>
+
+            <Button
+                android:text="Answer D"
+                android:layout_width="@dimen/button_main_margin_top"
+                android:layout_height="@dimen/general_height_stat_mode_setting"
+                android:id="@+id/btnAnswerD"
+                android:layout_gravity="center"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="9dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
